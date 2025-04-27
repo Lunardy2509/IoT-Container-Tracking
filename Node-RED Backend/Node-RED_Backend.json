@@ -1,0 +1,1802 @@
+[
+    {
+        "id": "47860cfb9e4116f5",
+        "type": "tab",
+        "label": "Container Backend",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0f135b4d45e25ec3",
+        "type": "sqlitedb",
+        "db": "/home/orangepi/UserDB.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "809c08a7da7c3899",
+        "type": "sqlitedb",
+        "db": "/home/orangepi/ContainerDB.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "4c28c3caff87baf4",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Broker",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "05b21ce71162bf84",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "146c5eaa8a6217f8",
+        "type": "ui_tab",
+        "name": "City1",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4a5a61fc0aab0fc7",
+        "type": "ui_tab",
+        "name": "City2",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "906e9dbdcae842df",
+        "type": "ui_tab",
+        "name": "City3",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8412d26d14d26a9c",
+        "type": "ui_tab",
+        "name": "Historical_City",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ed851da83e03ec91",
+        "type": "ui_group",
+        "name": "temperature",
+        "tab": "146c5eaa8a6217f8",
+        "order": 3,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "23bac835fd24197f",
+        "type": "ui_group",
+        "name": "humidity",
+        "tab": "146c5eaa8a6217f8",
+        "order": 4,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa39275439369350",
+        "type": "ui_group",
+        "name": "pressure",
+        "tab": "146c5eaa8a6217f8",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "40e318f1d7a3f0c4",
+        "type": "ui_group",
+        "name": "city_name",
+        "tab": "146c5eaa8a6217f8",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26ea556802bad3ce",
+        "type": "ui_group",
+        "name": "weather_description",
+        "tab": "146c5eaa8a6217f8",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "72c1c22f78bcee53",
+        "type": "ui_group",
+        "name": "temperature",
+        "tab": "4a5a61fc0aab0fc7",
+        "order": 3,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "32bbd801338901b6",
+        "type": "ui_group",
+        "name": "city_name",
+        "tab": "4a5a61fc0aab0fc7",
+        "order": 1,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "70dffc132970413d",
+        "type": "ui_group",
+        "name": "weather_description",
+        "tab": "4a5a61fc0aab0fc7",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9809c06c7590f112",
+        "type": "ui_group",
+        "name": "humidity",
+        "tab": "4a5a61fc0aab0fc7",
+        "order": 4,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ffb3de3039e1ad3",
+        "type": "ui_group",
+        "name": "pressure",
+        "tab": "4a5a61fc0aab0fc7",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f94d43d44dafd807",
+        "type": "ui_group",
+        "name": "temperature",
+        "tab": "906e9dbdcae842df",
+        "order": 3,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "771e9906f738d0f5",
+        "type": "ui_group",
+        "name": "city_name",
+        "tab": "906e9dbdcae842df",
+        "order": 1,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d02b6c3464262e24",
+        "type": "ui_group",
+        "name": "weather_description",
+        "tab": "906e9dbdcae842df",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b52298411c2477a5",
+        "type": "ui_group",
+        "name": "humidity",
+        "tab": "906e9dbdcae842df",
+        "order": 4,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78580b416a1d3d21",
+        "type": "ui_group",
+        "name": "pressure",
+        "tab": "906e9dbdcae842df",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a388a73bd97f3a19",
+        "type": "ui_group",
+        "name": "city_name",
+        "tab": "8412d26d14d26a9c",
+        "order": 1,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "798ffe34caf232dc",
+        "type": "ui_group",
+        "name": "date",
+        "tab": "8412d26d14d26a9c",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "026ea4d41fd88bf4",
+        "type": "ui_group",
+        "name": "humidity",
+        "tab": "8412d26d14d26a9c",
+        "order": 4,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27e66cc0b8924874",
+        "type": "ui_group",
+        "name": "pressure",
+        "tab": "8412d26d14d26a9c",
+        "order": 5,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3aba6f3d3dd0b31c",
+        "type": "ui_group",
+        "name": "wind_speed",
+        "tab": "8412d26d14d26a9c",
+        "order": 6,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3973e3b358bdac5f",
+        "type": "ui_group",
+        "name": "wind_degree",
+        "tab": "8412d26d14d26a9c",
+        "order": 7,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ddfd7fe7282ad0ef",
+        "type": "ui_group",
+        "name": "temperature",
+        "tab": "8412d26d14d26a9c",
+        "order": 3,
+        "disp": true,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "13e143ba40d81116",
+        "type": "ui_group",
+        "name": "weather_description",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "40ec2010ddb526bc",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1dd30c1de89af8e2",
+        "type": "MySQLdatabase",
+        "name": "UserDB",
+        "host": "localhost",
+        "port": "3306",
+        "db": "userdb",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "65726a13fd846848",
+        "type": "MySQLdatabase",
+        "name": "WeatherDB",
+        "host": "localhost",
+        "port": "3306",
+        "db": "weatherdb",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "020ad58ffa3cc236",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.eclipseprojects.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "01091cf7075387aa",
+        "type": "http in",
+        "z": "47860cfb9e4116f5",
+        "name": "Home Page",
+        "url": "/home",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "2bd43534b7d443a7"
+            ]
+        ]
+    },
+    {
+        "id": "2bd43534b7d443a7",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "HOME PAGE",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Home</title>\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/swiper/swiper-bundle.min.css\" />\n    <script src=\"https://unpkg.com/swiper/swiper-bundle.min.js\"></script>\n    <style>\n        /* General Styles */\n        body {\n            margin: 0;\n            font-family: 'Helvetica', sans-serif;\n            background-color: #F8F4EB;\n        }\n\n        /* Navbar Styles */\n        header {\n            background-color: #F8F4EB;\n            color: black;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n            padding: 0 2rem;\n            height: 70px;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n        }\n\n        header .logo {\n            display: flex;\n            align-items: center;\n            font-size: 1.5rem;\n            font-weight: bold;\n        }\n\n        header .logo img {\n            height: 50px;\n            margin-right: 10px;\n        }\n\n        header nav ul {\n            display: flex;\n            list-style: none;\n            padding: 0;\n            margin: 0;\n        }\n\n        header nav ul li {\n            margin: 0 1rem;\n        }\n\n        header nav ul li a {\n            text-decoration: none;\n            color: black;\n            font-weight: 500;\n            transition: color 0.3s ease;\n        }\n\n        header nav ul li a:hover {\n            color: #ffcc00;\n        }\n\n        header .right-nav {\n            display: flex;\n            align-items: center;\n            gap: 1rem;\n            padding: 1rem 1rem;\n            position: relative;\n            background-color: #003f91;\n            border-radius: 20px;\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);\n        }\n\n        header .right-nav a {\n            text-decoration: none;\n            color: white;\n            font-weight: 500;\n            transition: color 0.3s ease;\n        }\n\n        header .right-nav a:hover {\n            color: #ffcc00;\n        }\n\n        /* Image Slider */\n        .swiper-container {\n            width: 100%;\n            height: 500px;\n            margin: auto;\n            position: relative;\n        }\n\n        .swiper-slide {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            background: #F8F4EB;\n            font-size: 1.5rem;\n            color: #555;\n        }\n\n        .swiper-slide img {\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n        }\n\n        /* Service Section */\n        .service-section {\n            background-color: #003f91;\n            color: white;\n            text-align: center;\n            padding: 3rem 1rem;\n        }\n\n        .service-icons {\n            display: flex;\n            justify-content: center;\n            gap: 3rem;\n            flex-wrap: wrap;\n            margin-top: 1rem;\n        }\n\n        .service-icons div {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            font-size: 1rem;\n        }\n\n        .service-icons img {\n            width: 200px;\n            height: 200px;\n            margin-bottom: 1rem;\n            object-fit: contain;\n        }\n\n        /* Customer Section */\n        .customer-section {\n            text-align: center;\n            background-color: #F8F4EB;\n        }\n\n        .customer-section h2 {\n            margin-bottom: 2rem;\n        }\n\n        .customer-image {\n            width: 100%;\n            height: 100%;\n            background-color: #F8F4EB;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            margin: auto;\n            overflow: hidden;\n        }\n\n        .customer-image img {\n            width: 100%;\n            height: 100%;\n            object-fit: cover;\n        }\n\n        /* Contact Section */\n        .contact-section {\n            background-color: #003f91;\n            color: white;\n            text-align: center;\n            padding: 2rem 1rem;\n        }\n\n        /* Contact Section */\n        .contact-section {\n            background-color: #003f91;\n            color: white;\n            text-align: center;\n            padding: 2rem 1rem;\n        }\n\n        .contact-section h2 {\n            margin-bottom: 1rem;\n        }\n\n        .contact-details {\n            display: flex;\n            justify-content: center;\n            gap: 3rem;\n            flex-wrap: wrap;\n        }\n\n        .contact-details div {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            font-size: 1rem;\n        }\n\n        .contact-details img {\n            width: 80px;\n            height: 80px;\n            margin-bottom: 1rem;\n            object-fit: contain;\n        }\n    </style>\n</head>\n\n<body>\n    <header>\n        <div class=\"logo\">\n            <a href=\"#\">\n                <img src=\"images/Logo.png\" alt=\"Logo\">\n            </a>\n            Container\n        </div>\n        <nav>\n            <ul>\n                <li><a href=\"#\">Home</a></li>\n                <li><a href=\"/login\">Dashboard</a></li>\n                <li><a href=\"/login\">History</a></li>\n            </ul>\n        </nav>\n        <div class=\"right-nav\">\n            <a href=\"/login\">Login</a>\n        </div>\n    </header>\n\n    <div class=\"swiper-container\">\n        <div class=\"swiper-wrapper\">\n            <div class=\"swiper-slide\"><img src=\"/images/image1.jpeg\" alt=\"image-1\"></div>\n            <div class=\"swiper-slide\"><img src=\"/images/image2.jpeg\" alt=\"image-2\"></div>\n            <div class=\"swiper-slide\"><img src=\"/images/image3.jpeg\" alt=\"image-3\"></div>\n        </div>\n        <div class=\"swiper-pagination\"></div>\n    </div>\n\n    <section class=\"service-section\">\n        <h2>Services</h2>\n        <div class=\"service-icons\">\n            <div>\n                <a href=\"/login\"><img src=\"/images/Historical Data.png\" alt=\"History\"></a>History\n            </div>\n            <div>\n                <a href=\"/login\"><img src=\"/images/Chart.png\" alt=\"Charts\"></a>Charts\n            </div>\n            <div>\n                <a href=\"/login\"><img src=\"/images/Alert.png\" alt=\"Alerts\"></a>Alerts\n            </div>\n        </div>\n    </section>\n\n    <section class=\"customer-section\">\n        <h2>Customers Are All That Matter</h2>\n        <div class=\"customer-image\"><img src=\"images/image4.jpeg\" alt=\"image-4\"></div>\n    </section>\n\n    <section class=\"contact-section\">\n        <h2>Contact Us</h2>\n        <div class=\"contact-details\">\n            <div>\n                <a href=\"info.container@gmail.com\">\n                    <img src=\"images/email-icon.png\" width=\"35\" alt=\"Email\">\n                </a>Mail\n            </div>\n            <div>\n                <a href=\"https://maps.app.goo.gl/ZbKjZqcG6XBuect49\">\n                    <img src=\"images/map-icon.png\" width=\"24\" alt=\"Map\">\n                </a>Map\n            </div>\n            <div>\n                <a href=\"#\">\n                    <img src=\"images/web-icon.png\" width=\"40\" alt=\"Web\">\n                </a>Web\n            </div>\n        </div>\n    </section>\n\n    <script>\n        var swiper = new Swiper('.swiper-container', {\n            loop: true,\n            pagination: {\n                el: '.swiper-pagination',\n                clickable: true,\n            },\n            autoplay: {\n                delay: 3000,\n                disableOnInteraction: false,\n            }\n        });\n    </script>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "8ed00dbd35c7c98b"
+            ]
+        ]
+    },
+    {
+        "id": "8ed00dbd35c7c98b",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Home Page",
+        "statusCode": "",
+        "headers": {},
+        "x": 710,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d9dca9a849df9ff1",
+        "type": "comment",
+        "z": "47860cfb9e4116f5",
+        "name": "Home Page",
+        "info": "",
+        "x": 510,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e21ff3ba446af667",
+        "type": "http in",
+        "z": "47860cfb9e4116f5",
+        "name": "GET Sign Up",
+        "url": "/signup",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "302dca10fb8d6415"
+            ]
+        ]
+    },
+    {
+        "id": "302dca10fb8d6415",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "SET POST URL",
+        "func": "msg.url = \"getsignup\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "65491e9c34b86438"
+            ]
+        ]
+    },
+    {
+        "id": "65491e9c34b86438",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "SIGN UP PAGE",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Sign Up</title>\n  <script type=\"module\" src=\"https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js\"></script>\n  <script nomodule src=\"https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js\"></script>\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css\">\n  <link rel='stylesheet'\n    href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>\n  <link rel=\"stylesheet\" href=\"./style.css\">\n  <script src=\"http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js\"></script>\n\n  <style>\n    * {\n      font-family: \"Poppins\";\n    }\n\n    body {\n      -webkit-user-select: none;\n      -moz-user-select: none;\n      -ms-user-select: none;\n      user-select: none;\n      overflow-y: hidden;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      background: #dde5f4;\n      height: 100vh;\n    }\n\n    .screen-1 {\n      background: #f1f7fe;\n      padding: 2em;\n      display: flex;\n      flex-direction: column;\n      border-radius: 30px;\n      box-shadow: 0 0 2em #e6e9f9;\n      gap: 2em;\n    }\n\n    .screen-1 .logo {\n      margin-top: -3em;\n      margin-bottom: -6em;\n    }\n\n    .screen-1 .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .screen-1 h1 {\n      text-align: center;\n      margin-bottom: 1em;\n      font-size: 1.5em;\n    }\n\n    .screen-1 .email {\n      background: white;\n      box-shadow: 0 0 2em #e6e9f9;\n      padding: 1.5em;\n      display: flex;\n      flex-direction: column;\n      gap: 0.5em;\n      border-radius: 20px;\n      color: #4d4d4d;\n      margin-top: -2em;\n      margin-bottom: 1em;\n    }\n\n    .screen-1 .email input {\n      outline: none;\n      border: none;\n\n    }\n\n    .screen-1 .email input::-moz-placeholder {\n      color: black;\n      font-size: 0.9em;\n    }\n\n    .screen-1 .email input:-ms-input-placeholder {\n      color: black;\n      font-size: 0.9em;\n    }\n\n    .screen-1 .email input::placeholder {\n      color: gray;\n      font-size: 0.9em;\n    }\n\n    .screen-1 .email ion-icon {\n      color: #4d4d4d;\n      margin-bottom: -0.2em;\n    }\n\n    .screen-1 .email:first-of-type {\n      margin-bottom: 3em;\n    }\n\n    .screen-1 .password {\n      background: white;\n      box-shadow: 0 0 2em #e6e9f9;\n      padding: 1.5em;\n      display: flex;\n      flex-direction: column;\n      gap: 0.5em;\n      border-radius: 20px;\n      color: #4d4d4d;\n      margin-bottom: 1em;\n    }\n\n    .screen-1 .password input {\n      outline: none;\n      border: none;\n    }\n\n    .screen-1 .password input::-moz-placeholder {\n      color: black;\n      font-size: 0.9em;\n    }\n\n    .screen-1 .password input:-ms-input-placeholder {\n      color: black;\n      font-size: 0.9em;\n    }\n\n    .screen-1 .password input::placeholder {\n      color: gray;\n      font-size: 0.9em;\n    }\n\n    .screen-1 .password ion-icon {\n      color: #4d4d4d;\n      margin-bottom: -0.2em;\n    }\n\n    .screen-1 .password .show-hide {\n      margin-right: -5em;\n    }\n\n    .screen-1 .login {\n      padding: 1em;\n      background: #3e4684;\n      color: white;\n      border: none;\n      border-radius: 30px;\n      font-weight: 600;\n    }\n\n    .screen-1 .footer {\n      text-align: center;\n      font-size: 0.9em;\n      color: #5e5e5e;\n      padding-bottom: 2em;\n    }\n\n\n    .screen-1 .footer span {\n      cursor: pointer;\n    }\n\n    button {\n      cursor: pointer;\n    }\n  </style>\n</head>\n\n<body>\n  <div class=\"container\">\n    <div class=\"screen-1\">\n      <svg class=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"\n        width=\"300\" height=\"300\" viewbox=\"0 0 640 480\" xml:space=\"preserve\">\n        <g transform=\"matrix(3.31 0 0 3.31 320.4 240.4)\">\n          <circle\n            style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(61,71,133); fill-rule: nonzero; opacity: 1;\"\n            cx=\"0\" cy=\"0\" r=\"40\"></circle>\n        </g>\n        <g transform=\"matrix(0.98 0 0 0.98 268.7 213.7)\">\n          <circle\n            style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n            cx=\"0\" cy=\"0\" r=\"40\"></circle>\n        </g>\n        <g transform=\"matrix(1.01 0 0 1.01 362.9 210.9)\">\n          <circle\n            style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n            cx=\"0\" cy=\"0\" r=\"40\"></circle>\n        </g>\n        <g transform=\"matrix(0.92 0 0 0.92 318.5 286.5)\">\n          <circle\n            style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n            cx=\"0\" cy=\"0\" r=\"40\"></circle>\n        </g>\n        <g transform=\"matrix(0.16 -0.12 0.49 0.66 290.57 243.57)\">\n          <polygon\n            style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n            points=\"-50,-50 -50,50 50,50 50,-50 \"></polygon>\n        </g>\n        <g transform=\"matrix(0.16 0.1 -0.44 0.69 342.03 248.34)\">\n          <polygon\n            style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n            vector-effect=\"non-scaling-stroke\" points=\"-50,-50 -50,50 50,50 50,-50 \"></polygon>\n        </g>\n      </svg>\n      <h1>Sign Up Page</h1>\n      <form method=\"post\" action=\"/{{url}}\">\n        <div class=\"email\">\n          <div class=\"sec-2\">\n            <ion-icon name=\"mail-outline\"></ion-icon>\n            <input type=\"text\" class=\"form-control\" name=\"email\" placeholder=\"Email\" />\n          </div>\n        </div>\n        <div class=\"email\">\n          <div class=\"sec-2\">\n            <ion-icon name=\"person-outline\"></ion-icon>\n            <input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"Username\" />\n          </div>\n        </div>\n        <div class=\"password\">\n          <div class=\"sec-2\">\n            <ion-icon name=\"lock-closed-outline\"></ion-icon>\n            <input class=\"form-control\" type=\"password\" name=\"password\" placeholder=\"Password\" />\n            <ion-icon class=\"show-hide\" name=\"eye-outline\"></ion-icon>\n          </div>\n        </div>\n\n        <button type=\"submit\" class=\"login btn btn-secondary\">Sign up</button>\n      </form>\n      <div class=\"footer\">\n        <div class=\"footer\">\n          <p>Already have an account? <a href=\"/login\"><span>Login</span></a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</body>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const toggleIcon = document.querySelector(\".show-hide\");\n    const passwordInput = document.querySelector('input[name=\"password\"]');\n\n    toggleIcon.addEventListener(\"click\", function () {\n      const isPassword = passwordInput.type === \"password\";\n      passwordInput.type = isPassword ? \"text\" : \"password\";\n      toggleIcon.setAttribute(\"name\", isPassword ? \"eye-off-outline\" : \"eye-outline\");\n    });\n  });\n</script>\n\n</html>",
+        "output": "str",
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "7c746092f04b3c81"
+            ]
+        ]
+    },
+    {
+        "id": "7c746092f04b3c81",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Sign Up Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "24fd591385686dde",
+        "type": "http in",
+        "z": "47860cfb9e4116f5",
+        "name": "Create User",
+        "url": "/getsignup",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "7bebb1d2aa29d78e",
+                "81313af38c86059f"
+            ]
+        ]
+    },
+    {
+        "id": "7bebb1d2aa29d78e",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "CHECK USER",
+        "func": "const email = msg.payload.email;\nmsg.topic = `SELECT email FROM c_user WHERE email = '${email}';`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "9781a2e69fadf970"
+            ]
+        ]
+    },
+    {
+        "id": "81313af38c86059f",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "INSERT USER",
+        "func": "const email = msg.payload.email;\nconst username = msg.payload.username;\nconst password = msg.payload.password;\nmsg.topic = `INSERT INTO c_user (email, username, password) \n            VALUES ('${email}', '${username}', '${password}');`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "bdc8b01561e887d3"
+            ]
+        ]
+    },
+    {
+        "id": "7c0d244b276f1cfc",
+        "type": "switch",
+        "z": "47860cfb9e4116f5",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 690,
+        "y": 360,
+        "wires": [
+            [
+                "0de655cfbda49587"
+            ],
+            [
+                "ac0bce79f0a2c612"
+            ]
+        ]
+    },
+    {
+        "id": "0de655cfbda49587",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "Email USED",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n\t<title>Invalid Sign-Up</title>\n\t<link rel=\"stylesheet\" href=\"styles.css\" />\n    <link\n      href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\"\n      rel=\"stylesheet\"\n      integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\"\n      crossorigin=\"anonymous\"\n    />\n<body>\n\t<script\n      src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\"\n      integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\"\n      crossorigin=\"anonymous\"\n    ></script>\n<center>\n<img src=\"https://cdn-icons-png.flaticon.com/512/3362/3362051.png\" alt=\"invalid login\" width=\"256\" height=\"256\">\n<h1>Email already used, Try another one!</h1>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');\n\n    html, body {\n\tmargin: 0;\n\tpadding: 0;\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\tmin-height: 100vh;\n\tfont-family: 'Poppins', sans-serif;\n    font-size: 20px;\n      }\n</style>\n\n\n<form action=\"/signup\">\n <button class=\"btn btn-dark\" type=\"submit\">Back</button>\n</form>\n<center>\n\n</body>\n</html>\n",
+        "output": "str",
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "3b0c1656bdbdad25"
+            ]
+        ]
+    },
+    {
+        "id": "ac0bce79f0a2c612",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "Acc Registered",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Account Registered</title>\n    <link rel=\"stylesheet\" href=\"styles.css\" />\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\n        integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\" crossorigin=\"anonymous\" />\n    <style>\n        h1 {\n            text-align: center;\n        }\n\n        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');\n\n        html,\n        body {\n            margin: 0;\n            padding: 0;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            min-height: 100vh;\n            font-family: 'Poppins', sans-serif;\n            font-size: 20px;\n        }\n\n        .shake {\n            animation: shake 3s infinite;\n            transform-origin: center;\n            display: inline-block;\n        }\n\n        @keyframes shake {\n            0%, 100% {\n                transform: translateX(0);\n            }\n\n            25%, 75% {\n                transform: translateX(-5px);\n            }\n\n            50% {\n                transform: translateX(5px);\n            }\n        }\n    </style>\n</head>\n\n<body>\n    <center>\n        <img src=\"https://cdn-icons-png.flaticon.com/512/10313/10313152.png\" width=\"128\" height=\"128\" alt=\"Logo\"\n            class=\"shake\">\n        <h1>Your Account is Registered!</h1>\n        <form action=\"/login\">\n            <button class=\"btn btn-primary\" type=\"submit\">Login</button>\n        </form>\n    </center>\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\"\n        integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\" crossorigin=\"anonymous\"></script>\n</body>\n\n</html>\n",
+        "output": "str",
+        "x": 840,
+        "y": 380,
+        "wires": [
+            [
+                "1141b07f28fe5e41"
+            ]
+        ]
+    },
+    {
+        "id": "3b0c1656bdbdad25",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Email Used Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1020,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1141b07f28fe5e41",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Acc Registered Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1050,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "574dfbab2c4e9cb7",
+        "type": "comment",
+        "z": "47860cfb9e4116f5",
+        "name": "Sign Up Page",
+        "info": "",
+        "x": 510,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9a25597df551b33b",
+        "type": "comment",
+        "z": "47860cfb9e4116f5",
+        "name": "Login Page",
+        "info": "",
+        "x": 510,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a09680feb59b6cc7",
+        "type": "http in",
+        "z": "47860cfb9e4116f5",
+        "name": "GET Login Page",
+        "url": "/login",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "33089318cb910d22"
+            ]
+        ]
+    },
+    {
+        "id": "33089318cb910d22",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "SET POST URL",
+        "func": "msg.url = \"getlogin\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "9096784e1e562701"
+            ]
+        ]
+    },
+    {
+        "id": "9096784e1e562701",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "LOGIN PAGE",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Login</title>\n    <script type=\"module\" src=\"https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js\"></script>\n    <script nomodule src=\"https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js\"></script>\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css\">\n    <link rel='stylesheet'\n        href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>\n    <link rel=\"stylesheet\" href=\"./style.css\">\n    <script src=\"http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js\"></script>\n\n    <style>\n        * {\n            font-family: \"Poppins\";\n        }\n\n        body {\n            -webkit-user-select: none;\n            -moz-user-select: none;\n            -ms-user-select: none;\n            user-select: none;\n            overflow-y: hidden;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            background: #dde5f4;\n            height: 100vh;\n        }\n\n        .screen-1 {\n            background: #f1f7fe;\n            padding: 2em;\n            display: flex;\n            flex-direction: column;\n            border-radius: 30px;\n            box-shadow: 0 0 2em #e6e9f9;\n            gap: 2em;\n        }\n\n        .screen-1 .logo {\n            margin-top: -3em;\n            margin-bottom: -6em;\n        }\n\n        .screen-1 .container {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n        }\n\n        .screen-1 h1 {\n            text-align: center;\n            margin-bottom: 1em;\n            font-size: 1.5em;\n        }\n\n        .screen-1 .email {\n            background: white;\n            box-shadow: 0 0 2em #e6e9f9;\n            padding: 1.5em;\n            display: flex;\n            flex-direction: column;\n            gap: 0.5em;\n            border-radius: 20px;\n            color: #4d4d4d;\n            margin-top: -2em;\n            margin-bottom: 1em;\n        }\n\n        .screen-1 .email input {\n            outline: none;\n            border: none;\n\n        }\n\n        .screen-1 .email input::-moz-placeholder {\n            color: black;\n            font-size: 0.9em;\n        }\n\n        .screen-1 .email input:-ms-input-placeholder {\n            color: black;\n            font-size: 0.9em;\n        }\n\n        .screen-1 .email input::placeholder {\n            color: gray;\n            font-size: 0.9em;\n        }\n\n        .screen-1 .email ion-icon {\n            color: #4d4d4d;\n            margin-bottom: -0.2em;\n        }\n\n        .screen-1 .password {\n            background: white;\n            box-shadow: 0 0 2em #e6e9f9;\n            padding: 1.5em;\n            display: flex;\n            flex-direction: column;\n            gap: 0.5em;\n            border-radius: 20px;\n            color: #4d4d4d;\n            margin-bottom: 1em;\n        }\n\n        .screen-1 .password input {\n            outline: none;\n            border: none;\n        }\n\n        .screen-1 .password input::-moz-placeholder {\n            color: black;\n            font-size: 0.9em;\n        }\n\n        .screen-1 .password input:-ms-input-placeholder {\n            color: black;\n            font-size: 0.9em;\n        }\n\n        .screen-1 .password input::placeholder {\n            color: gray;\n            font-size: 0.9em;\n        }\n\n        .screen-1 .password ion-icon {\n            color: #4d4d4d;\n            margin-bottom: -0.2em;\n        }\n\n        .screen-1 .password .show-hide {\n            margin-right: -5em;\n        }\n\n        .screen-1 .login {\n            padding: 1em;\n            background: #3e4684;\n            color: white;\n            border: none;\n            border-radius: 30px;\n            font-weight: 600;\n        }\n\n        .screen-1 .footer {\n            text-align: center;\n            font-size: 0.9em;\n            color: #5e5e5e;\n            padding-bottom: 2em;\n        }\n\n\n        .screen-1 .footer span {\n            cursor: pointer;\n        }\n\n        button {\n            cursor: pointer;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"container\">\n        <div class=\"screen-1\">\n            <svg class=\"logo\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n                version=\"1.1\" width=\"300\" height=\"300\" viewbox=\"0 0 640 480\" xml:space=\"preserve\">\n                <g transform=\"matrix(3.31 0 0 3.31 320.4 240.4)\">\n                    <circle\n                        style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(61,71,133); fill-rule: nonzero; opacity: 1;\"\n                        cx=\"0\" cy=\"0\" r=\"40\"></circle>\n                </g>\n                <g transform=\"matrix(0.98 0 0 0.98 268.7 213.7)\">\n                    <circle\n                        style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n                        cx=\"0\" cy=\"0\" r=\"40\"></circle>\n                </g>\n                <g transform=\"matrix(1.01 0 0 1.01 362.9 210.9)\">\n                    <circle\n                        style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n                        cx=\"0\" cy=\"0\" r=\"40\"></circle>\n                </g>\n                <g transform=\"matrix(0.92 0 0 0.92 318.5 286.5)\">\n                    <circle\n                        style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n                        cx=\"0\" cy=\"0\" r=\"40\"></circle>\n                </g>\n                <g transform=\"matrix(0.16 -0.12 0.49 0.66 290.57 243.57)\">\n                    <polygon\n                        style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n                        points=\"-50,-50 -50,50 50,50 50,-50 \"></polygon>\n                </g>\n                <g transform=\"matrix(0.16 0.1 -0.44 0.69 342.03 248.34)\">\n                    <polygon\n                        style=\"stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;\"\n                        vector-effect=\"non-scaling-stroke\" points=\"-50,-50 -50,50 50,50 50,-50 \"></polygon>\n                </g>\n            </svg>\n            <h1>Login Page</h1>\n            <form method=\"post\" action=\"/{{url}}\">\n                <div class=\"email\">\n                    <div class=\"sec-2\">\n                        <ion-icon name=\"mail-outline\"></ion-icon>\n                        <input type=\"text\" class=\"form-control\" name=\"email\" placeholder=\"Email\" />\n                    </div>\n                </div>\n                <div class=\"password\">\n                    <div class=\"sec-2\">\n                        <ion-icon name=\"lock-closed-outline\"></ion-icon>\n                        <input class=\"form-control\" type=\"password\" name=\"password\" placeholder=\"Password\" />\n                        <ion-icon class=\"show-hide\" name=\"eye-outline\"></ion-icon>\n                    </div>\n                </div>\n\n                <button type=\"submit\" class=\"login btn btn-secondary\">Login</button>\n            </form>\n            <div class=\"footer\">\n                <div class=\"footer\">\n                    <p>Don't have an account? <a href=\"/signup\"><span>Sign up</span></a></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</body>\n\n<script>\n    document.addEventListener(\"DOMContentLoaded\", function () {\n        const toggleIcon = document.querySelector(\".show-hide\");\n        const passwordInput = document.querySelector('input[name=\"password\"]');\n\n        toggleIcon.addEventListener(\"click\", function () {\n            const isPassword = passwordInput.type === \"password\";\n            passwordInput.type = isPassword ? \"text\" : \"password\";\n            toggleIcon.setAttribute(\"name\", isPassword ? \"eye-off-outline\" : \"eye-outline\");\n        });\n    });\n</script>\n\n</html>",
+        "output": "str",
+        "x": 600,
+        "y": 520,
+        "wires": [
+            [
+                "72078eb1917adf16"
+            ]
+        ]
+    },
+    {
+        "id": "72078eb1917adf16",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Login Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 800,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "bbfcf42d171917f0",
+        "type": "comment",
+        "z": "47860cfb9e4116f5",
+        "name": "Dashboard Page",
+        "info": "",
+        "x": 520,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2391b7ef2cfecec8",
+        "type": "http in",
+        "z": "47860cfb9e4116f5",
+        "name": "Check User",
+        "url": "/getlogin",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 680,
+        "wires": [
+            [
+                "6f7385b6d4d8d5c1"
+            ]
+        ]
+    },
+    {
+        "id": "6f7385b6d4d8d5c1",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "CHECK USER",
+        "func": "const email = msg.payload.email;\nconst password = msg.payload.password;\nmsg.topic = `SELECT email, password FROM c_user WHERE email = '${email}' AND password = '${password}';`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 680,
+        "wires": [
+            [
+                "6d8b0893898b112f",
+                "0ade10410ceffd40"
+            ]
+        ]
+    },
+    {
+        "id": "c1358fd3a3ce3b17",
+        "type": "switch",
+        "z": "47860cfb9e4116f5",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 690,
+        "y": 680,
+        "wires": [
+            [
+                "81fcabd1f96a81b6",
+                "72f9c2c4c60d2a2a",
+                "ccce4dc109e940f9"
+            ],
+            [
+                "85ca02a7c7b7bf7c"
+            ]
+        ]
+    },
+    {
+        "id": "72f9c2c4c60d2a2a",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "GET ALL DATA",
+        "func": "msg.topic = `SELECT * FROM c_container;`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 660,
+        "wires": [
+            [
+                "a348df3ab8f2712a"
+            ]
+        ]
+    },
+    {
+        "id": "eedf1c9883652116",
+        "type": "join",
+        "z": "47860cfb9e4116f5",
+        "name": "Parse Data",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1230,
+        "y": 660,
+        "wires": [
+            [
+                "640331eba0c5fb84"
+            ]
+        ]
+    },
+    {
+        "id": "81fcabd1f96a81b6",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "GET MPU DATA",
+        "func": "msg.topic = `SELECT * FROM c_container_mpu;`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 700,
+        "wires": [
+            [
+                "57615fdfb472528c"
+            ]
+        ]
+    },
+    {
+        "id": "9781a2e69fadf970",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user",
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "7c0d244b276f1cfc"
+            ]
+        ]
+    },
+    {
+        "id": "bdc8b01561e887d3",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user",
+        "x": 540,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d8b0893898b112f",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user",
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "c1358fd3a3ce3b17"
+            ]
+        ]
+    },
+    {
+        "id": "a348df3ab8f2712a",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "809c08a7da7c3899",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_container",
+        "x": 1030,
+        "y": 660,
+        "wires": [
+            [
+                "eedf1c9883652116"
+            ]
+        ]
+    },
+    {
+        "id": "57615fdfb472528c",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "809c08a7da7c3899",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_container_mpu",
+        "x": 1050,
+        "y": 700,
+        "wires": [
+            [
+                "eedf1c9883652116"
+            ]
+        ]
+    },
+    {
+        "id": "ccce4dc109e940f9",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "Access Log",
+        "func": "const data = msg.payload[0];\nconst email = data.email;\nconst password = data.password;\nmsg.topic = `SELECT * FROM c_user WHERE email = '${email}' AND password = '${password}'`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 620,
+        "wires": [
+            [
+                "ca3082e4935aac9a"
+            ]
+        ]
+    },
+    {
+        "id": "ca3082e4935aac9a",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user",
+        "x": 990,
+        "y": 620,
+        "wires": [
+            [
+                "17814d64a5ee8e36"
+            ]
+        ]
+    },
+    {
+        "id": "17814d64a5ee8e36",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "Update Log Dashboard",
+        "func": "const data = msg.payload[0];\nconst user_id = data.user_id;\nconst username = data.username;\nconst method = \"GET\";\nconst service = \"dashboard\";\n\nmsg.topic = `INSERT INTO c_user_access_log (user_id, username, method, service) \n            VALUES (${user_id}, '${username}', '${method}', '${service}');`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 620,
+        "wires": [
+            [
+                "7c5f60f0e45790ef"
+            ]
+        ]
+    },
+    {
+        "id": "7c5f60f0e45790ef",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user_access_log",
+        "x": 1390,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85ca02a7c7b7bf7c",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "User Invalid ",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n\t<title>Invalid Login</title>\n\t<link rel=\"stylesheet\" href=\"styles.css\" />\n    <link\n      href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css\"\n      rel=\"stylesheet\"\n      integrity=\"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9\"\n      crossorigin=\"anonymous\"\n    />\n<body>\n\t<script\n      src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js\"\n      integrity=\"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm\"\n      crossorigin=\"anonymous\"\n    ></script>\n<center>\n<img src=\"https://cdn-icons-png.flaticon.com/512/2741/2741166.png\" alt=\"invalid login\" width=\"256\" height=\"256\">\n<h1>Wrong Username or Password, Please try again!</h1>\n<style>\n    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');\n      html, body {\n\t  margin: 0;\n\t  padding: 0;\n\t  display: flex;\n\t  justify-content: center;\n\t  align-items: center;\n\t  min-height: 100vh;\n\t  font-family: 'Poppins', sans-serif;\n      font-size: 20px;\n      }\n</style>\n<form action=\"/login\">\n <button class=\"btn btn-dark\" type=\"submit\">Back</button>\n</form>\n<center>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 850,
+        "y": 740,
+        "wires": [
+            [
+                "b6e4b42476d75ad4"
+            ]
+        ]
+    },
+    {
+        "id": "b6e4b42476d75ad4",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Invalid Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1050,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "640331eba0c5fb84",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "SET DATA",
+        "func": "let data = msg.payload;\nlet containerDetails = [];\n\nfor (let i = 0; i < data[1].length; i++) {\n    let row = data[1][i];\n    let status = data[0][i];\n    containerDetails.push({\n        container_number: row.container_number,\n        container_type: row.container_type,\n        last_updated_time: row.last_updated_time,\n        latitude: parseFloat(row.latitude),\n        longitude: parseFloat(row.longitude),\n        loc_name: row.loc_name,\n        temperature: parseFloat(row.temperature),\n        humidity: parseFloat(row.humidity),\n        status: status.shock_status\n    });\n}\n\nlet temperature_arr = containerDetails.map(c => c.temperature);\nlet humidity_arr = containerDetails.map(c => c.humidity);\n\nmsg.payload = {\n    containers: containerDetails,\n    containersString: JSON.stringify(containerDetails),\n    temperature_arr,\n    humidity_arr\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 660,
+        "wires": [
+            [
+                "691f4098c94fcdbf"
+            ]
+        ]
+    },
+    {
+        "id": "691f4098c94fcdbf",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "DASHBOARD PAGE",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Dashboard</title>\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css\" />\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n    <script src=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.js\"></script>\n    <style>\n        /* General Styles */\n        @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');\n\n        body {\n            margin: 0;\n            font-family: 'Helvetica', sans-serif;\n            background-color: #F8F4EB;\n        }\n\n        /* Navbar Styles */\n        header {\n            background-color: #F8F4EB;\n            color: black;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n            padding: 0 2rem;\n            height: 70px;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n        }\n\n        header .logo {\n            display: flex;\n            align-items: center;\n            font-size: 1.5rem;\n            font-weight: bold;\n        }\n\n        header .logo img {\n            height: 50px;\n            margin-right: 10px;\n        }\n\n        header nav {\n            display: flex;\n            align-items: center;\n        }\n\n        header nav ul {\n            display: flex;\n            list-style: none;\n            padding: 0;\n            margin: 0;\n        }\n\n        header nav ul li {\n            margin: 0 1rem;\n        }\n\n        header nav ul li a {\n            text-decoration: none;\n            color: black;\n            font-weight: 500;\n            transition: color 0.3s ease;\n        }\n\n        header nav ul li a:hover {\n            color: #ffcc00;\n        }\n\n\n        header .right-nav {\n            display: flex;\n            align-items: center;\n            gap: 1rem;\n            padding: 1rem 1rem;\n            position: relative;\n            background-color: #003f91;\n            border-radius: 20px;\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);\n        }\n\n        header .right-nav a {\n            text-decoration: none;\n            color: white;\n            font-weight: 500;\n            transition: color 0.3s ease;\n        }\n\n        header .right-nav a:hover {\n            color: #ffcc00;\n        }\n\n        .tracking-container {\n            display: none;\n            position: absolute;\n            top: 80px;\n            right: 20px;\n            background: white;\n            padding: 1rem;\n            border-radius: 10px;\n            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n        }\n\n        .tracking-container input {\n            width: 100%;\n            font-size: large;\n            margin-bottom: 10px;\n        }\n\n        .tracking-container button {\n            width: 100%;\n            padding: 8px;\n            background: #003f91;\n            color: white;\n            border: none;\n            cursor: pointer;\n            font-size: large;\n        }\n\n        .search-container {\n            background: white;\n            border-radius: 10px;\n            margin-bottom: 10px;\n            border: 1px solid #ccc;\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n            width: 250px;\n            transition: all 0.3s ease;\n        }\n\n        .search-container:hover {\n            border-color: #ffcc00;\n            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);\n        }\n\n        .search-container input {\n            border: none;\n            outline: none;\n            flex: 1;\n            margin: 5px 5px;\n            font-size: 15px;\n            background: transparent;\n        }\n\n        .dashboard-container {\n            display: flex;\n            height: calc(100vh - 70px);\n        }\n\n        #map {\n            flex: 2;\n            height: 100%;\n        }\n\n        #recenterButton {\n            position: absolute;\n            bottom: 20px;\n            right: 20px;\n            z-index: 1000;\n            background: transparent;\n            border: none;\n            padding: 4px;\n            cursor: pointer;\n            box-shadow: none;\n        }\n\n        #recenterButton img {\n            width: 35px;\n            height: 35px;\n            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.25));\n            border-radius: 50%;\n        }\n\n\n        .data-panel {\n            flex: 1;\n            display: flex;\n            flex-direction: column;\n            padding: 1rem;\n            background-color: white;\n            border-left: 1px solid #ddd;\n        }\n\n        #tempHumidityChart {\n            width: 100%;\n            height: 300px;\n            margin-bottom: 20px;\n            background-color: #F8F4EB;\n        }\n\n        .alerts {\n            flex: 1;\n            overflow-y: auto;\n            border-top: 1px solid #ddd;\n            padding-top: 10px;\n        }\n\n        .alerts h2 {\n            margin-top: 0;\n            color: #333;\n        }\n\n        .alerts ul {\n            list-style: none;\n            padding: 0;\n        }\n\n        .alerts ul li {\n            background-color: #ffcccc;\n            margin-bottom: 10px;\n            padding: 10px;\n            border: 1px solid #ff9999;\n            border-radius: 5px;\n        }\n    </style>\n</head>\n\n<body>\n    <header>\n        <div class=\"logo\">\n            <a href=\"#\">\n                <img src=\"images/Logo.png\" alt=\"Logo\">\n            </a>\n            Dashboard\n        </div>\n        <nav>\n            <ul>\n                <li><a href=\"#\">Home</a></li>\n                <li><a href=\"#\">Dashboard</a></li>\n                <li><a href=\"/history\">History</a></li>\n            </ul>\n        </nav>\n        <div class=\"right-nav\" id=\"trackingBtn\">\n            <a href=\"#\">Tracking</a>\n        </div>\n    </header>\n    <div class=\"tracking-container\" id=\"trackingContainer\">\n        <div class=\"search-container\">\n            <input type=\"text\" id=\"containerNumber\" placeholder=\"Enter container number\">\n        </div>\n        <button onclick=\"fetchTrackingData()\">Track</button>\n        <div id=\"trackingResult\"></div>\n    </div>\n    <div class=\"dashboard-container\">\n        <div id=\"map\">\n            <button id=\"recenterButton\"><img\n                    src=\"https://icon-library.com/images/navigation-icon-png/navigation-icon-png-5.jpg\"\n                    alt=\"recenterButton\"></button>\n        </div>\n        <div class=\"data-panel\">\n            <canvas id=\"tempHumidityChart\"></canvas>\n            <div class=\"alerts\">\n                <h2>Alerts</h2>\n                <ul id=\"alertsList\">\n                    <!-- Alerts dynamically populated -->\n                </ul>\n            </div>\n        </div>\n    </div>\n    <script>\n        // Ensure we properly parse arrays\n        const temperatureArr = [{{{ payload.temperature_arr }}}];\n        const humidityArr = [{{{ payload.humidity_arr }}}];\n\n        // Initialize map\n        const map = L.map('map').setView([-6.0958, 106.8820], 8);\n        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n            attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\n        }).addTo(map);\n\n        document.getElementById(\"recenterButton\").addEventListener(\"click\", function () {\n            map.setView([-6.0958, 106.8820], 7);\n        });\n\n        // Custom Icons\n        const containerIcon = L.icon({\n            iconUrl: 'https://cdn-icons-png.flaticon.com/512/6643/6643400.png',\n            iconSize: [50, 50],\n            iconAnchor: [25, 50],\n            popupAnchor: [0, -50]\n        });\n\n        const truckIcon = L.icon({\n            iconUrl: 'https://cdn-icons-png.flaticon.com/512/10112/10112476.png',\n            iconSize: [50, 50],\n            iconAnchor: [25, 50],\n            popupAnchor: [0, -50]\n        });\n\n        const containers = JSON.parse(`{{{ payload.containersString }}}`);\n\n        const shipments = [];\n        const truckShipping = [];\n\n        containers.forEach((container, index) => {\n            const markerData = {\n                name: container.container_number,\n                type: container.container_type,\n                lat: container.latitude,\n                long: container.longitude,\n                status: \"\"\n            };\n\n            // Assign status based on index\n            if ([0, 2, 7, 8].includes(index)) {\n                markerData.status = \"Port of Discharging\";\n                shipments.push(markerData);\n            } else if (index === 1) {\n                markerData.status = \"On Board\";\n                shipments.push(markerData);\n            } else if (index === 3 || index === 6) {\n                markerData.status = \"Port of Loading\";\n                shipments.push(markerData);\n            } else if (index === 4 || index === 9) {\n                markerData.status = \"On The Way to the Warehouse\";\n                truckShipping.push(markerData);\n            } else if (index === 5) {\n                markerData.status = \"Warehouse\";\n                truckShipping.push(markerData);\n            }\n        });\n\n\n        // Plot markers for shipments\n        shipments.forEach(marker => {\n            L.marker([marker.lat, marker.long], { icon: containerIcon })\n                .addTo(map)\n                .bindPopup(`<b>${marker.name}</b><br>${marker.type}<br>Status: ${marker.status}`);\n        });\n\n        // Plot markers for truck shipping\n        truckShipping.forEach(marker => {\n            L.marker([marker.lat, marker.long], { icon: truckIcon })\n                .addTo(map)\n                .bindPopup(`<b>${marker.name}</b><br>${marker.type}<br>Status: ${marker.status}`);\n        });\n\n        // Temperature and Humidity Chart\n        const ctx = document.getElementById('tempHumidityChart').getContext('2d');\n        const tempHumidityChart = new Chart(ctx, {\n            type: 'bar',\n            data: {\n                labels: containers.map(c => c.container_number),\n                datasets: [\n                    {\n                        label: 'Temperature (°C)',\n                        data: temperatureArr,\n                        borderColor: 'rgba(255, 99, 132, 1)',\n                        borderWidth: 1,\n                        fill: false\n                    },\n                    {\n                        label: 'Humidity (%)',\n                        data: humidityArr,\n                        borderColor: 'rgba(54, 162, 235, 1)',\n                        borderWidth: 1,\n                        fill: false\n                    }\n                ]\n            },\n            options: {\n                responsive: true,\n                plugins: {\n                    legend: {\n                        position: 'top'\n                    }\n                }\n            }\n        });\n\n        // Alerts\n        const alertsList = document.getElementById('alertsList');\n        const alerts = [];\n\n        containers.forEach(container => {\n            const { container_number, container_type, temperature, status } = container;\n            console.log(\"Container data:\", container);\n\n            if (container_type === \"REEFER\" && temperature > 30) {\n                alerts.push({\n                    message: `Alert! ${container_number} (REEFER) Temperature is ${temperature}°C, above threshold.`,\n                    severity: \"medium\"\n                });\n            }\n\n            if (status === \"MODERATE\" || status === \"SEVERE\") {\n                alerts.push({\n                    message: `Warning! ${container_number} experienced ${status} shock.`,\n                    severity: status === \"SEVERE\" ? \"high\" : \"medium\"\n                });\n            }\n        });\n\n        alerts.forEach(alert => {\n            const li = document.createElement('li');\n            li.textContent = alert.message;\n            li.style.backgroundColor = alert.severity === \"high\" ? \"#F28C8C\" : \"#FFE38F\";\n            li.style.padding = \"10px\";\n            li.style.marginBottom = \"5px\";\n            li.style.borderRadius = \"5px\";\n            li.style.listStyle = \"none\";\n            alertsList.appendChild(li);\n        });\n\n        // Toggle tracking container\n        document.getElementById('trackingBtn').addEventListener('click', function () {\n            let container = document.getElementById('trackingContainer');\n            container.style.display = (container.style.display === 'none' || container.style.display === '') ? 'block' : 'none';\n        });\n\n        // Tracking data fetch\n        function fetchTrackingData() {\n            let containerNumber = document.getElementById('containerNumber').value;\n            let resultDiv = document.getElementById('trackingResult');\n            resultDiv.innerHTML = \"Checking database...\";\n\n            setTimeout(() => {\n                const mockDatabase = {};\n\n                for (let i = 0; i < containers.length; i++) {\n                    const c = containers[i];\n                    mockDatabase[c.container_number] = {\n                        lastUpdated: c.last_updated_time,\n                        type: c.container_type,\n                        location: c.loc_name,\n                        temperature: c.temperature,\n                        humidity: c.humidity\n                    };\n                }\n\n                if (mockDatabase[containerNumber]) {\n                    let data = mockDatabase[containerNumber];\n                    resultDiv.innerHTML = `\n                    <p><b>Last Updated:</b> ${data.lastUpdated}</p>\n                    <p><b>Container Type:</b> ${data.type}</p>\n                    <p><b>Location:</b> ${data.location}</p>\n                    <p><b>Temperature:</b> ${data.temperature}°C</p>\n                    <p><b>Humidity:</b> ${data.humidity}%</p>\n                `;\n                } else {\n                    resultDiv.innerHTML = \"Container not found.\";\n                }\n            }, 1000);\n        }\n    </script>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1560,
+        "y": 660,
+        "wires": [
+            [
+                "61f5153de5ed5795"
+            ]
+        ]
+    },
+    {
+        "id": "61f5153de5ed5795",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "Dashboard Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1780,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0ade10410ceffd40",
+        "type": "join",
+        "z": "47860cfb9e4116f5",
+        "name": "Parse Data",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "fbfc28ac7b07a66d"
+            ]
+        ]
+    },
+    {
+        "id": "365891ee24434a3e",
+        "type": "http in",
+        "z": "47860cfb9e4116f5",
+        "name": "History Page",
+        "url": "/history",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 840,
+        "wires": [
+            [
+                "0ade10410ceffd40",
+                "fea81ed75f95feaf"
+            ]
+        ]
+    },
+    {
+        "id": "40aef2b7b91d5cbb",
+        "type": "comment",
+        "z": "47860cfb9e4116f5",
+        "name": "History Page",
+        "info": "",
+        "x": 510,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "fea81ed75f95feaf",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "GET ALL DATA",
+        "func": "msg.topic = `SELECT * FROM c_container_history;`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 860,
+        "wires": [
+            [
+                "eb5168abbcb77bae"
+            ]
+        ]
+    },
+    {
+        "id": "fbfc28ac7b07a66d",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "Access Log",
+        "func": "const data = msg.payload[0];\nconst email = data.email;\nconst password = data.password;\nmsg.topic = `SELECT * FROM c_user WHERE email = '${email}' AND password = '${password}'`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 820,
+        "wires": [
+            [
+                "e51bcb50ca1fac5f"
+            ]
+        ]
+    },
+    {
+        "id": "e51bcb50ca1fac5f",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user",
+        "x": 670,
+        "y": 820,
+        "wires": [
+            [
+                "adbd92ae126bed4f"
+            ]
+        ]
+    },
+    {
+        "id": "adbd92ae126bed4f",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "Update Log History",
+        "func": "const data = msg.payload[0];\nconst user_id = data.user_id;\nconst username = data.username;\nconst method = \"GET\";\nconst service = \"history\";\n\nmsg.topic = `INSERT INTO c_user_access_log (user_id, username, method, service) \n            VALUES (${user_id}, '${username}', '${method}', '${service}');`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 820,
+        "wires": [
+            [
+                "1d64c549afe27ff3"
+            ]
+        ]
+    },
+    {
+        "id": "eb5168abbcb77bae",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "809c08a7da7c3899",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_container_history",
+        "x": 570,
+        "y": 860,
+        "wires": [
+            [
+                "c39edb0c0de336ba"
+            ]
+        ]
+    },
+    {
+        "id": "c39edb0c0de336ba",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "SET DATA",
+        "func": "let data = msg.payload;\nlet containerDetails = [];\n\nfor (let i = 0; i < data.length; i++) {\n    let row = data[i];\n\n    containerDetails.push({\n        container_number: row.container_number,\n        container_type: row.container_type,\n        date_time: row.date_time,\n        latitude: parseFloat(row.latitude),\n        longitude: parseFloat(row.longitude),\n        loc_name: row.loc_name,\n        temperature: parseFloat(row.temperature),\n        humidity: parseFloat(row.humidity),\n        status: row.shock_status\n    });\n}\n\nmsg.payload = {\n    containers: containerDetails,\n    containersString: JSON.stringify(containerDetails),\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 860,
+        "wires": [
+            [
+                "786e4334172f9f22"
+            ]
+        ]
+    },
+    {
+        "id": "2b2cb94422799b3f",
+        "type": "http response",
+        "z": "47860cfb9e4116f5",
+        "name": "History Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1090,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "9e66ef4ad9eb787f",
+        "type": "mqtt in",
+        "z": "47860cfb9e4116f5",
+        "name": "",
+        "topic": "esp32/container_data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "020ad58ffa3cc236",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1040,
+        "wires": [
+            [
+                "e26bc2bbf5d6c4b2",
+                "5b3d2c137fb211b3",
+                "8a9d7de15535ddf0",
+                "f87d17d89fe4a5a3"
+            ]
+        ]
+    },
+    {
+        "id": "47d518dd079c6efd",
+        "type": "mqtt in",
+        "z": "47860cfb9e4116f5",
+        "name": "",
+        "topic": "esp32/mpu_data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "020ad58ffa3cc236",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 1120,
+        "wires": [
+            [
+                "f87d17d89fe4a5a3",
+                "bc18acc5379afbc2"
+            ]
+        ]
+    },
+    {
+        "id": "e26bc2bbf5d6c4b2",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "GET Reverse Geocoding",
+        "func": "var lat = msg.payload.latitude;\nvar lon = msg.payload.longitude;\nmsg.method = \"GET\";\nmsg.url = \"https://nominatim.openstreetmap.org/reverse?format=json&lat=\" + lat + \"&lon=\" + lon + \"&zoom=18&addressdetails=1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1000,
+        "wires": [
+            [
+                "515216566dca405d"
+            ]
+        ]
+    },
+    {
+        "id": "86637f0aeaad69e9",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "Extract Loc Data",
+        "func": "var addr = msg.payload.address || {};\nvar city = addr.city || addr.town || addr.village || addr.hamlet || addr.county || msg.payload.display_name;\nmsg.payload = {\n    location_name : city\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1000,
+        "wires": [
+            [
+                "5b3d2c137fb211b3"
+            ]
+        ]
+    },
+    {
+        "id": "93771618e7627cae",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "SEND Query c_container_history",
+        "func": "var data = msg.payload[0];\nvar loc = msg.payload[1];\nvar stat = msg.payload[2];\nvar container_number = data.container_number;\nvar container_type = data.container_type;\nvar latitude = data.latitude;\nvar longitude = data.longitude;\nvar temperature = data.temperature;\nvar humidity = data.humidity;\nvar shock_status = stat.shock_status;\n\n// Get the location name from OpenStreetMap response\nvar loc_name = loc.location_name || \"Lokasi Tidak Diketahui\";\n\n// Build SQL query\nmsg.topic = `INSERT INTO c_container_history (\n   container_number,\n   container_type,\n   date_time,\n   latitude,\n   longitude,\n   loc_name,\n   temperature,\n   humidity,\n   shock_status\n) VALUES (\n   '${container_number}',\n   '${container_type}',\n   datetime(CURRENT_TIMESTAMP, '+7 hours'),\n   ${latitude},\n   ${longitude},\n   '${loc_name}',\n   '${temperature}',\n   '${humidity}',\n   '${shock_status}'\n);`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1120,
+        "wires": [
+            [
+                "bce4539c318ead9c"
+            ]
+        ]
+    },
+    {
+        "id": "eb9cc14dc609ec68",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "SEND Query c_container",
+        "func": "var data = msg.payload[0];\nvar loc = msg.payload[1];\nvar container_number = data.container_number;\nvar container_type = data.container_type;\nvar latitude = data.latitude;\nvar longitude = data.longitude;\nvar temperature = data.temperature;\nvar humidity = data.humidity;\n\n// Get the location name from OpenStreetMap response\nvar loc_name = loc.location_name || \"Lokasi Tidak Diketahui\";\n\n// Build SQL query\nmsg.topic = `INSERT INTO c_container (\n   container_number,\n   container_type,\n   last_updated_time,\n   latitude,\n   longitude,\n   loc_name,\n   temperature,\n   humidity\n) VALUES (\n   '${container_number}',\n   '${container_type}',\n   datetime(CURRENT_TIMESTAMP, '+7 hours'),\n   ${latitude},\n   ${longitude},\n   '${loc_name}',\n   '${temperature}',\n   '${humidity}'\n)\nON CONFLICT(container_number) DO UPDATE SET\n   last_updated_time = datetime(CURRENT_TIMESTAMP, '+7 hours'),\n   latitude = ${latitude},\n   longitude = ${longitude},\n   loc_name = '${loc_name}',\n   temperature = '${temperature}',\n   humidity = '${humidity}';\n`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1040,
+        "wires": [
+            [
+                "e0f28e256e8be0d4"
+            ]
+        ]
+    },
+    {
+        "id": "e0f28e256e8be0d4",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "809c08a7da7c3899",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_container",
+        "x": 1470,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b3d2c137fb211b3",
+        "type": "join",
+        "z": "47860cfb9e4116f5",
+        "name": "Parse Data",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1070,
+        "y": 1040,
+        "wires": [
+            [
+                "eb9cc14dc609ec68"
+            ]
+        ]
+    },
+    {
+        "id": "8a9d7de15535ddf0",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "GET Reverse Geocoding",
+        "func": "var lat = msg.payload.latitude;\nvar lon = msg.payload.longitude;\nmsg.method = \"GET\";\nmsg.url = \"https://nominatim.openstreetmap.org/reverse?format=json&lat=\" + lat + \"&lon=\" + lon + \"&zoom=18&addressdetails=1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "26a2e25cc8795084"
+            ]
+        ]
+    },
+    {
+        "id": "08ab120abc24c034",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "Extract Loc Data",
+        "func": "var addr = msg.payload.address || {};\nvar city = addr.city || addr.town || addr.village || addr.hamlet || addr.county || msg.payload.display_name;\nmsg.payload = {\n    location_name : city\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1080,
+        "wires": [
+            [
+                "f87d17d89fe4a5a3"
+            ]
+        ]
+    },
+    {
+        "id": "f87d17d89fe4a5a3",
+        "type": "join",
+        "z": "47860cfb9e4116f5",
+        "name": "Parse Data",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1070,
+        "y": 1120,
+        "wires": [
+            [
+                "93771618e7627cae"
+            ]
+        ]
+    },
+    {
+        "id": "bce4539c318ead9c",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "809c08a7da7c3899",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_container_history",
+        "x": 1550,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc18acc5379afbc2",
+        "type": "function",
+        "z": "47860cfb9e4116f5",
+        "name": "c_container_mpu",
+        "func": "var data = msg.payload;\nvar container_number = data.container_number;\nvar shock_status = data.shock_status;\nvar accel_x = data.avg_accel_x;\nvar accel_y = data.avg_accel_y;\nvar accel_z = data.avg_accel_z;\n\n// Build SQL query\nmsg.topic = `INSERT INTO c_container_mpu (\n   container_number,\n   last_updated_time,\n   shock_status,\n   accel_x,\n   accel_y,\n   accel_z\n) VALUES (\n   '${container_number}',\n   datetime(CURRENT_TIMESTAMP, '+7 hours'),\n   '${shock_status}',\n   ${accel_x},\n   ${accel_y},\n   ${accel_z}\n)\nON CONFLICT(container_number) DO UPDATE SET\n   shock_status = '${shock_status}',\n   last_updated_time = datetime(CURRENT_TIMESTAMP, '+7 hours'),\n   accel_x = ${accel_x},\n   accel_y = ${accel_y},\n   accel_z = ${accel_z}\n   ;`\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1160,
+        "wires": [
+            [
+                "e1ec45860c180e0b"
+            ]
+        ]
+    },
+    {
+        "id": "e1ec45860c180e0b",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "809c08a7da7c3899",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_container_mpu",
+        "x": 650,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93e3b46a27d0fdcc",
+        "type": "comment",
+        "z": "47860cfb9e4116f5",
+        "name": "Data Extraction",
+        "info": "",
+        "x": 520,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "1d64c549afe27ff3",
+        "type": "sqlite",
+        "z": "47860cfb9e4116f5",
+        "mydb": "0f135b4d45e25ec3",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "c_user_access_log",
+        "x": 1030,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "786e4334172f9f22",
+        "type": "template",
+        "z": "47860cfb9e4116f5",
+        "name": "HISTORY PAGE",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>History</title>\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css\" />\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n    <script src=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.js\"></script>\n    <style>\n        /* General Styles */\n        @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');\n\n        body {\n            margin: 0;\n            font-family: 'Helvetica', sans-serif;\n            background-color: #F8F4EB;\n        }\n\n        /* Navbar Styles */\n        header {\n            background-color: #F8F4EB;\n            color: black;\n            display: flex;\n            align-items: center;\n            justify-content: space-between;\n            padding: 0 2rem;\n            height: 70px;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n        }\n\n        header .logo {\n            display: flex;\n            align-items: center;\n            font-size: 1.5rem;\n            font-weight: bold;\n        }\n\n        header .logo img {\n            height: 50px;\n            margin-right: 10px;\n        }\n\n        header nav {\n            display: flex;\n            align-items: center;\n        }\n\n        header nav ul {\n            display: flex;\n            list-style: none;\n            padding: 0;\n            margin: 0;\n        }\n\n        header nav ul li {\n            margin: 0 1rem;\n        }\n\n        header nav ul li a {\n            text-decoration: none;\n            color: black;\n            font-weight: 500;\n            transition: color 0.3s ease;\n        }\n\n        header nav ul li a:hover {\n            color: #ffcc00;\n        }\n\n\n        header .right-nav {\n            display: flex;\n            align-items: center;\n            gap: 1rem;\n            padding: 1rem 1rem;\n            position: relative;\n            background-color: #003f91;\n            border-radius: 20px;\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);\n        }\n\n        header .right-nav a {\n            text-decoration: none;\n            color: white;\n            font-weight: 500;\n            transition: color 0.3s ease;\n        }\n\n        header .right-nav a:hover {\n            color: #ffcc00;\n        }\n\n        .container {\n            padding: 2rem;\n        }\n\n        /* Styling for the table */\n        #historyTable {\n            width: 100%;\n            border-collapse: collapse;\n            margin: 20px 0;\n            font-size: 18px;\n            text-align: left;\n            border-radius: 8px;\n            overflow: hidden;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n        }\n\n        /* Table header styling */\n        #historyTable thead {\n            background-color: #003f91;\n            color: white;\n            font-weight: bold;\n        }\n\n        #historyTable th,\n        #historyTable td {\n            padding: 12px;\n            border-bottom: 1px solid #ddd;\n        }\n\n        /* Alternating row colors */\n        #historyTable tbody tr:nth-child(even) {\n            background-color: #f2f2f2;\n        }\n\n        #historyTable tbody tr:hover {\n            background-color: #e0e0e0;\n            transition: 0.3s;\n        }\n\n        /* Responsive table */\n        @media screen and (max-width: 768px) {\n            #historyTable {\n                font-size: 16px;\n            }\n\n            #historyTable th,\n            #historyTable td {\n                padding: 8px;\n            }\n        }\n\n        .search-row {\n            display: flex;\n            align-items: center;\n            gap: 5px;\n        }\n\n        .search-container {\n            background: white;\n            border-radius: 10px;\n            padding: 5px 5px;\n            border: 1px solid #ccc;\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n            width: 160px;\n            transition: all 0.3s ease;\n        }\n\n        .search-container:hover {\n            border-color: #ffcc00;\n            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);\n        }\n\n        .search-container input {\n            border: none;\n            outline: none;\n            flex: 1;\n            font-size: 14px;\n            background: transparent;\n        }\n\n        .map-container {\n            width: 100%;\n            height: 400px;\n            margin-top: 20px;\n        }\n    </style>\n</head>\n\n<body>\n    <header>\n        <div class=\"logo\">\n            <a href=\"/home\">\n                <img src=\"images/Logo.png\" alt=\"Logo\">\n            </a>\n            History\n        </div>\n        <nav>\n            <ul>\n                <li><a href=\"/home\">Home</a></li>\n                <li><a href=\"/login\">Dashboard</a></li>\n                <li><a href=\"#\">History</a></li>\n            </ul>\n        </nav>\n        <div class=\"right-nav\" id=\"trackingBtn\">\n            <a href=\"/login\">Back to Dashboard</a>\n        </div>\n    </header>\n    <div class=\"container\">\n        <h2>Container Tracking History</h2>\n        <div class=\"search-row\">\n            <label for=\"search\">Search:</label>\n            <div class=\"search-container\">\n                <input type=\"text\" id=\"search\" placeholder=\"Enter container number\" onkeyup=\"searchTable()\">\n            </div>\n        </div>\n        <table id=\"historyTable\">\n            <thead>\n                <tr>\n                    <th>Container ID</th>\n                    <th>Type</th>\n                    <th>Datetime</th>\n                    <th>Location</th>\n                    <th>Temperature</th>\n                    <th>Humidity</th>\n                    <th>Shock Status</th>\n                </tr>\n            </thead>\n            <tbody id=\"historyTableBody\">\n                <!-- Rows will be generated here -->\n            </tbody>\n        </table>\n\n        <h2>Historical Tracking Map</h2>\n        <div id=\"map\" class=\"map-container\">\n            <button id=\"resetMapBtn\"\n                style=\"position: absolute; bottom: 30px; right: 10px; z-index: 1000; background: none; border: none; cursor: pointer;\">\n                <img src=\"https://icon-library.com/images/navigation-icon-png/navigation-icon-png-5.jpg\" alt=\"Reset Map\"\n                    width=\"40\" height=\"40\">\n            </button>\n        </div>\n    </div>\n    <script>\n        // Injected JSON string from Node-RED\n        const containers = JSON.parse(`{{{ payload.containersString }}}`);\n        const tableBody = document.getElementById(\"historyTableBody\");\n\n        for (let i = 0; i < containers.length; i++) {\n            const c = containers[i];\n            const row = document.createElement(\"tr\");\n            row.innerHTML = `\n                <td>${c.container_number}</td>\n                <td>${c.container_type}</td>\n                <td>${c.date_time}</td>\n                <td>${c.loc_name}</td>\n                <td>${c.temperature}°C</td>\n                <td>${c.humidity}%</td>\n                <td>${c.status}</td>\n            `;\n            tableBody.appendChild(row);\n        }\n\n        function searchTable() {\n            const input = document.getElementById(\"search\").value.toUpperCase();\n            const table = document.getElementById(\"historyTable\");\n            const tr = table.getElementsByTagName(\"tr\");\n\n            // Loop through table rows, skipping the header (index 0)\n            for (let i = 1; i < tr.length; i++) {\n                const td = tr[i].getElementsByTagName(\"td\")[0]; // column 0 = container number\n                if (td) {\n                    const txtValue = td.textContent || td.innerText;\n                    tr[i].style.display = txtValue.toUpperCase().indexOf(input) > -1 ? \"\" : \"none\";\n                }\n            }\n        }\n\n        // Define ports\n        const c = containers;\n        const ports = {\n            \"Port of Jakarta\": [c[0].latitude, c[0].longitude],\n            \"Port of Surabaya\": [-7.2047, 112.7332],\n            \"Port of Merak\": [-5.9230, 106.0510],\n            \"Port of Bandar Lampung\": [-5.8690, 105.7559],\n            \"Port of Pontianak\": [c[2].latitude, c[2].longitude]\n        };\n\n        const warehouses = {\n            \"Warehouse Jakarta\": [c[3].latitude, c[3].longitude]\n        }\n\n        // Initialize map\n        const map = L.map('map').setView([-6.0958, 106.8820], 8);\n        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n            attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\n        }).addTo(map);\n\n        // Add event listener to reset button\n        document.getElementById('resetMapBtn').addEventListener('click', function () {\n            map.setView([-6.0958, 106.8820], 7);\n        });\n\n        // Custom Ship Icon\n        const shipIcon = L.icon({\n            iconUrl: 'https://cdn-icons-png.flaticon.com/512/6643/6643400.png',\n            iconSize: [50, 50],\n            iconAnchor: [25, 50],\n            popupAnchor: [0, -50]\n        });\n\n        // Custom Pin Icon\n        const pinIcon = L.icon({\n            iconUrl: 'https://cdn4.iconfinder.com/data/icons/contact-and-address-1/32/contact-05-512.png',\n            iconSize: [25, 25],\n        })\n\n        // Custom Truck Icon\n        const truckIcon = L.icon({\n            iconUrl: 'https://cdn-icons-png.flaticon.com/512/10112/10112476.png',\n            iconSize: [50, 50],\n            iconAnchor: [25, 0],\n            popupAnchor: [0, -50]\n        });\n\n        // Define realistic sea routes\n        const container1Route = [\n            [c[0].latitude, c[0].longitude],\n            [-5.502816, 107.178587],  // Java Sea waypoint\n            [-6.278157, 112.182455],  // Approaching East Java\n            [c[9].latitude, c[9].longitude]\n        ];\n\n        const container2Route = [\n            ports[\"Port of Jakarta\"],\n            [-5.728090, 106.657922],\n            [c[1].latitude, c[1].longitude],  // Current location on board\n            ports[\"Port of Bandar Lampung\"]\n        ];\n\n        const container3Route = [\n            ports[\"Port of Merak\"],\n            [-4.814201, 106.800713],\n            [-2.808463, 107.226196],\n            [-0.159886, 108.777722],\n            [c[2].latitude, c[2].longitude]\n        ];\n\n        const container4Route = [\n            [c[3].latitude, c[3].longitude],\n            ports[\"Port of Jakarta\"]\n        ];\n\n        const container5Route = [\n            ports[\"Port of Merak\"],\n            [c[4].latitude, c[4].longitude],\n            warehouses[\"Warehouse Jakarta\"]\n        ];\n\n        const container6Route = [\n            [c[5].latitude, c[5].longitude],\n            [-6.396856, 107.437100],\n            ports[\"Port of Jakarta\"]\n        ];\n\n        const container7Route = [\n            [c[6].latitude, c[6].longitude],\n            [-1.917290, 107.242162],\n            [-5.140067, 106.841763],\n            ports[\"Port of Jakarta\"]\n        ];\n\n        const container8Route = [\n            ports[\"Port of Surabaya\"],\n            [-7.425054, 114.599799],\n            [c[7].latitude, c[7].longitude]\n        ];\n\n        const container9Route = [\n            ports[\"Port of Surabaya\"],\n            [-7.083961, 117.489383],\n            [c[8].latitude, c[8].longitude]\n        ];\n\n        const container10Route = [\n            [c[11].latitude, c[11].longitude],\n            [c[12].latitude, c[12].longitude],\n            [c[13].latitude, c[13].longitude],\n            [c[14].latitude, c[14].longitude],\n            [c[15].latitude, c[15].longitude],\n            [c[16].latitude, c[16].longitude],\n            [c[17].latitude, c[17].longitude],\n            [c[18].latitude, c[18].longitude]\n        ];\n\n        // Draw sea routes\n        L.polyline(container1Route, { color: 'blue', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container2Route, { color: 'red', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container3Route, { color: 'green', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container4Route, { color: 'turquoise', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container5Route, { color: 'magenta', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container6Route, { color: 'green', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container7Route, { color: 'purple', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container8Route, { color: 'gray', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container9Route, { color: 'red', weight: 3, dashArray: '5, 10' }).addTo(map);\n        L.polyline(container10Route, { color: 'purple', weight: 3, dashArray: '5, 10' }).addTo(map);\n\n        L.marker(ports[\"Port of Surabaya\"], { icon: pinIcon })\n            .addTo(map)\n        L.marker(ports[\"Port of Bandar Lampung\"], { icon: pinIcon })\n            .addTo(map)\n        L.marker(ports[\"Port of Pontianak\"], { icon: pinIcon })\n            .addTo(map)\n        L.marker(warehouses[\"Warehouse Jakarta\"], { icon: pinIcon })\n            .addTo(map)\n\n        const shipments = [];\n        const truckShipping = [];\n\n        containers.forEach((container, index) => {\n            const markerData = {\n                name: container.container_number,\n                type: container.container_type,\n                lat: container.latitude,\n                long: container.longitude,\n                status: \"\"\n            };\n\n            // Define status manually based on index\n            if (index <= 2) {\n                markerData.status = [\"Port of Loading\", \"On Board\", \"Port of Discharging\"][index];\n                shipments.push(markerData);\n            } else if (index >= 3 && index <= 5 ){\n                markerData.status = [\"Warehouse\", \"On The Way to the Warehouse\", \"Warehouse\"][index - 3];\n                truckShipping.push(markerData);\n            }\n            else if (index >= 6 && index <= 10) {\n                markerData.status = [\"Port of Loading\", \"Port of Discharging\", \"Port of Discharging\", \"Port of Discharging\", \"Port of Loading\"][index - 6];\n                shipments.push(markerData);\n            } else if (index >= 11) {\n                markerData.status = \"On The Way to the Warehouse\";\n                truckShipping.push(markerData);\n            }\n        });\n\n        // Render ship icons\n        shipments.forEach(shipment => {\n            L.marker([shipment.lat, shipment.long], { icon: shipIcon })\n                .addTo(map)\n                .bindPopup(`<b>${shipment.name}</b><br>${shipment.type}<br>Status: ${shipment.status}`);\n        });\n\n        // Render truck icons\n        truckShipping.forEach(truck => {\n            L.marker([truck.lat, truck.long], { icon: truckIcon })\n                .addTo(map)\n                .bindPopup(`<b>${truck.name}</b><br>${truck.type}<br>Status: ${truck.status}`);\n        });\n\n\n    </script>\n\n</body>\n\n</html>",
+        "output": "str",
+        "x": 900,
+        "y": 860,
+        "wires": [
+            [
+                "2b2cb94422799b3f"
+            ]
+        ]
+    },
+    {
+        "id": "515216566dca405d",
+        "type": "http request",
+        "z": "47860cfb9e4116f5",
+        "name": "GET Location Info",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 1000,
+        "wires": [
+            [
+                "86637f0aeaad69e9"
+            ]
+        ]
+    },
+    {
+        "id": "26a2e25cc8795084",
+        "type": "http request",
+        "z": "47860cfb9e4116f5",
+        "name": "GET Location Info",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 1080,
+        "wires": [
+            [
+                "08ab120abc24c034"
+            ]
+        ]
+    }
+]
