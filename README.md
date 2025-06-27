@@ -64,9 +64,35 @@ IoT-Container-Tracking/
 - Install libraries for `TinyGSM`, `DHT`, `Wire`, `Adafruit MPU6050`, etc.
 - Upload code from `Hardware Code/`
 
-3. Running Node-RED Backend
+### 3. Running Node-RED Backend
 - Import flow files from `Node-RED Backend/` into your local Node-RED
 - Set up a SQLite connection on Orange Pi or your PC
+
+## 📚 Library Installation Guide
+Before uploading the code to the ESP32 (TTGO T-CALL), ensure the following libraries are installed in your Arduino IDE:
+| Library Name                | Usage                                         | How to Install                                   |
+| --------------------------- | --------------------------------------------- | ------------------------------------------------ |
+| **TinyGSM**                 | Handles cellular communication via SIM module | Arduino IDE → Library Manager → Search "TinyGSM" |
+| **DHT sensor library**      | Reads temperature and humidity from DHT22     | Search: `DHT sensor library by Adafruit`         |
+| **Adafruit Unified Sensor** | Dependency for DHT + MPU6050                  | Search: `Adafruit Unified Sensor`                |
+| **Adafruit MPU6050**        | Access MPU6050 accelerometer/gyroscope data   | Search: `Adafruit MPU6050`                       |
+| **Adafruit BusIO**          | Internal dependency for MPU6050               | Search: `Adafruit BusIO`                         |
+| **Wire** (built-in)         | I2C communication                             | Already included in Arduino IDE                  |
+| **SoftwareSerial**          | Optional for serial communication             | Built-in for most Arduino cores                  |
+| **ESP32 Board Support**     | Required to compile code for TTGO ESP32       | See below                                        |
+
+## 🛠️ ESP32 Board Setup
+To upload code to your **TTGO T-CALL ESP32**, follow these steps:
+1. Open Arduino IDE
+2. Go to **File > Preferences**
+3. In "Additional Board Manager URLs", add:
+```bash
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
+4. Go to **Tools > Board > Boards Manager**
+5. Search for and install **esp32 by Espressif Systems**
+6. Select "**TTGO T1**" or "**ESP32 Dev Module**" from **Tools > Board**
+
 
 ## 📈 Limitations & Future Work
 - Sensor precision may vary and needs calibration
