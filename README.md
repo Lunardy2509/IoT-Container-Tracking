@@ -1,3 +1,12 @@
+<details>
+<summary>Click to view Documentation Images</summary>
+
+| | | |
+|---|---|---|
+| ![1](https://github.com/Lunardy2509/IoT-Container-Tracking/blob/main/Documentation/Images/Side%20View%20-%20DHT22.png) | ![2](https://github.com/Lunardy2509/IoT-Container-Tracking/blob/main/Documentation/Images/Final%20Product%20Look.png) | ![3](https://github.com/Lunardy2509/IoT-Container-Tracking/blob/main/Documentation/Images/Side%20View%20-%20Button%20and%20Reprogram%20Hole.png) |
+
+</details>
+
 # 📦 IoT-Based Container Tracking System
 
 This repository contains the source files for a thesis project focused on developing an IoT-powered smart container tracking system. The system is designed for a logistics company named **Tanto** and aims to **monitor container conditions** (e.g., location, temperature, and vibrations) in real time while in transit.
