@@ -87,7 +87,7 @@ Before uploading the code to the ESP32 (TTGO T-CALL), ensure the following libra
 | **Adafruit MPU6050**        | Access MPU6050 accelerometer/gyroscope data   | Search: `Adafruit MPU6050`                       |
 | **Adafruit BusIO**          | Internal dependency for MPU6050               | Search: `Adafruit BusIO`                         |
 | **Wire** (built-in)         | I2C communication                             | Already included in Arduino IDE                  |
-| **SoftwareSerial**          | Optional for serial communication             | Built-in for most Arduino cores                  |
+| **HardwareSerial**          | Optional for serial communication             | Built-in for most Arduino cores                  |
 | **ESP32 Board Support**     | Required to compile code for TTGO ESP32       | See below                                        |
 
 ## 🛠️ ESP32 Board Setup
